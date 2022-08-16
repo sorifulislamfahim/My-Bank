@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwaind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <section class="mt-20">
+            <h1 class="text-4xl text-center">Lets Go Change<span class="text-lime-500 font-semibold italic hover:text-5xl ">Our Future💌💙 </span></h1>
+        </section>
+    </header>
+    <main>
+        <!-- First section  -->
+        <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 w-9/12 mx-auto text-white">
+            <div class="bg-red-300 px-3 py-5 rounded-md mt-5">
+                <h2 class="text-xl">Deposite</h2>
+                <h1 class="text-3xl">$<span id="deposite-total">00</span></h1>
+            </div>
+            <div class="bg-orange-400 px-3 py-5 rounded-md mt-5">
+                <h2 class="text-xl">Withdrow</h2>
+                <h1 class="text-3xl">$<span id="withdrow-total">00</span></h1>
+            </div>
+            <div class="bg-lime-400 px-3 py-5 rounded-md mt-5">
+                <h2 class="text-xl">Balance</h2>
+                <h1 class="text-3xl">$<span id="balance-total">1240</span></h1>
+            </div>
+        </section>
+
+        <!-- second section  -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-3 w-9/12 mx-auto my-7">
+            <div class="bg-cyan-500 px-3 py-5 rounded-md mt-5">
+                <h2 class="text-3xl font-semibold  text-white">Please Deposit</h2>
+                <input id="deposite-filed" class="block w-10/12 my-1 mt-5 rounded-sm p-1" type="text" placeholder="$ Enter Your Deposite Ammount">
+                <button id="deposite-btn" class="bg-sky-700 rounded-md px-8 py-1 my-4 hover:bg-red-600 font-medium">Deposite</button>
+            </div>
+            <div class="bg-fuchsia-600 px-3 py-5 rounded-md mt-5">
+                <h2 class="text-3xl font-semibold  text-white">Please Withdrow</h2>
+                <input id="withdrow-filed" class="block w-10/12 my-1 mt-5 rounded-sm p-1" type="text" placeholder="$ Enter Your withdrow Ammount">
+                <button id="withdrow-btn" class="bg-sky-700 rounded-md px-8 py-1 my-4 hover:bg-red-600 font-medium">Withdorw</button>
+            </div>
+        </section>
+
+        <section class="text-center my-20">
+            <button id="confirm-btn" class="bg-red-600 px-10 py-10 text-3xl text-white rounded-3xl font-bold hover:bg-lime-600">Confirm</button>
+        </section>
+    </main>
+
+    <script src="javascript/deposite.js"></script>
+    <script src="javascript/withdrow.js"></script>
+    <script src="javascript/confirm.js"></script>
+</body>
+</html>
